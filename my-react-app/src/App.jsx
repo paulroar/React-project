@@ -1,19 +1,26 @@
 import { useState } from 'react';
-import listings from './listings.json';
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ErrorPage from "./pages/ErrorPage";
+import SideBar from "./components/Sidebar";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import "./App.css";
 
-function App(){
+
+function App() {
+
   return (
     <div>
-      <h1>Listings</h1>
-      <ul>
-        {listings.results.map(listing => (
-          <li key={listing.id}>
-            <h2>{listing.name}</h2>
-            <p>{listing.description}</p>
-            <a href={listing.listing_url}>View Listing</a>
-          </li>
-        ))}
-      </ul>
+      <Navbar />
+      <SideBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
