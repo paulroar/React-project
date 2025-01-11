@@ -1,5 +1,3 @@
-fetch('listings.json')
-
 {
     "results": [
       {
