@@ -1,4 +1,4 @@
-import Listings from './../components/Listings';
+import ListingsCard from '../components/ListingsCard';
 
 function HomePage(){
     return (
@@ -7,7 +7,7 @@ function HomePage(){
                 Hello !
             </h1>
             <div>This is the home page</div>
-            <Listings />
+            <ListingsCard />
         </div>
         
     )
