@@ -1,10 +1,14 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import HomeIcon from "../assets/home-icon.png";
 
 function Navbar() {
   return (
-    <nav className="navbar"> style={{ background: 'lightblue', textAlign: 'center'}}
-      <img src="/src/assets/logo.png" alt="Logo" className="logo" />
-      <h1>Listings</h1>
+    <nav className="navbar">
+      <Link to="/">
+        <img src={HomeIcon} alt="Home Icon" />
+      </Link>
+      <h1> Apartment Rentals</h1>
+
     </nav>
   );
 }
