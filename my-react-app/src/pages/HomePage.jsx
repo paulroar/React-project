@@ -1,16 +1,9 @@
-import ListingsCard from '../components/ListingsCard';
-
-function HomePage(){
+function HomePage() {
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello !
-            </h1>
-            <div>This is the home page</div>
-            <ListingsCard />
-        </div>
-        
-    )
-}
-
-export default HomePage;
+      <div className="home" style={{textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center"}}>
+        <h1>Available Listings</h1>
+      </div>
+    );
+  }
+   
+  export default HomePage;
