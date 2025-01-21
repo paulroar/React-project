@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        <a href="">
+        <a href="https://github.com/paulroar" target="_blank" rel="noreferrer noopener">
           GitHub Repository
         </a>
       </p>
