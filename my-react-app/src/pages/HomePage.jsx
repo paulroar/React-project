@@ -1,6 +1,8 @@
+
+
 function HomePage() {
     return (
-      <div className="home" style={{textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center"}}>
+      <div className="home">
         <h1>Available Listings</h1>
       </div>
     );

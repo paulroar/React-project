@@ -1,57 +1,86 @@
-#root {
-    
-  }
-  
-  .navbar {
-    display: flex;
-    padding: 1em;
-    background-color: #008080;
-    color: white;
-  }
+  /* Navbar Styles */
+.navbar {
+  display: flex;
+  padding: 1em;
+  background-color: #008080;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 195px;
+  width: calc(100% - 200px);
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 .navbar img {
-    width: 50px;
-    height: 50px;
-  }
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
 
-
+/* Sidebar Styles */
 .sidebar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 161px; 
+  background-color: #f0f0f0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.sidebar button {
+  text-align: center;
+  padding: 1em;
+  font-size: 16px;
+  color: #008080;
+  border: 2px solid #008080;
+  border-radius: 15px;
+  margin: 10px 0; 
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #e0f7f7; 
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  background-color: #008080;
+  color: white;
   justify-content: center;
-  display: grid;
-  align-content: space-evenly;
-  grid-template-columns: auto auto auto;
-  gap: 70px;
-    background-color: #f0f0f0;
-    padding: 1em;
-    
-  }
+  align-items: center;
+  padding: 1em;
+}
 
-  .sidebar button {
-    text-align: center;
-    padding: 1em;
-    font-size: 16px;
-    color: #008080;
-    border: 2px solid #008080;
-    border-radius: 15px;
+.footer a {
+  color: white;
+  text-decoration: none;
+}
 
-  }
+/* Home Page Styles */
+.home {
+  margin-left: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em;
+  background-color: #f9f9f9; 
+  min-height: 100vh; 
+}
 
+/* Utility Classes */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  .footer {
-    display: flex;
-    background-color: #008080;
-    color: white;
-    justify-content: center;
-  }
-  .footer a {
-    color: white;
-  }
-
-  .home {
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:blue;
-    height: 100vh;
-  }
