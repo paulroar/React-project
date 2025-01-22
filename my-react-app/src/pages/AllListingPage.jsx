@@ -6,6 +6,14 @@ import "./AllListingPage.css";
 function AllListingPage() {
   const [listings, setListings] = useState(listingsJSON);
 
+  const handleDelete = (id) => {
+    const updatedListings = {
+      ...listings,
+      results: listings.results.filter((listing) => listing.id !== id),
+    };
+    setListings(updatedListings);
+  };
+
   return (
     <div className="listings">
       <h1>Listings</h1>
@@ -18,6 +26,9 @@ function AllListingPage() {
             <a href={listing.listing_url} target="_blank" rel="noopener noreferrer">
               View Listing
             </a>
+            <button className="delete-button" onClick={() => handleDelete(listing.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
