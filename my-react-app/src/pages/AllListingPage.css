@@ -74,7 +74,7 @@
     padding: 0.5em 1em;
     font-size: 0.9em;
     color: white;
-    background-color: #a70808; 
+    background-color: #D72638; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -82,5 +82,5 @@
   }
   
   .delete-button:hover {
-    background-color: #aa4a4a; 
+    background-color: #FF5A5F; 
     }
