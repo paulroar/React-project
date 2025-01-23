@@ -1,9 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function SideBar() {
   return (
     <nav className="sidebar">
+
+      <Link to="/">
+      <button>Return to Home</button>
+      </Link>
+
       <Link to="/listings">
         <button>Available Rentals</button>
       </Link>

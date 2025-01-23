@@ -1,3 +1,8 @@
+ p {
+  max-width: 1200px;
+
+
+ }
   /* Navbar Styles */
 .navbar {
   display: flex;
@@ -36,6 +41,7 @@
 
 .sidebar button {
   text-align: center;
+  width: 100%;
   padding: 1em;
   font-size: 16px;
   color: #008080;

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        <a href="">
+        <a href="https://github.com/paulroar/React-project">
           GitHub Repository
         </a>
       </p>

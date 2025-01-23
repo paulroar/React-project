@@ -5,6 +5,12 @@
     background-color: #f9f9f9;
     color: #333;
   }
+
+  .listings h1 {
+    font-size: 2.5rem;
+    color: #008080;
+    margin-bottom: 0.8em;
+  }
   
   /* Grid Layout */
   .listing-grid {
