@@ -60,6 +60,7 @@
 /* Footer Styles */
 .footer {
   display: flex;
+  margin-left: 195px;
   background-color: #008080;
   color: white;
   justify-content: center;

@@ -1,0 +1,96 @@
+.manage-listings {
+    padding: 2em;
+    margin-left: 200px; /* Ajuste para o sidebar */
+    background-color: #f9f9f9;
+  }
+  
+  .listing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .listing-form input,
+  .listing-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .listing-form button {
+    padding: 0.5em 1em;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .listing-form button:hover {
+    background-color: #005f5f;
+  }
+  
+  .listings-container {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .listing-card-add {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 1em); /* Três cartões por linha */
+    box-sizing: border-box;
+  }
+  
+  .listing-card-add img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .listing-card-add h3 {
+    margin: 0.5em 0;
+    color: #333;
+  }
+  
+  .listing-card-add a {
+    color: #008080;
+    text-decoration: none;
+  }
+  
+  .listing-card-add a:hover {
+    text-decoration: underline;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  
+  .action-buttons button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #e0f7f7;
+  }
+  
+  .action-buttons .delete-btn {
+    background-color: #a70808;
+    color: white;
+  }
+  
+  .action-buttons .delete-btn:hover {
+    background-color: #aa4a4a;
+  }
+  
