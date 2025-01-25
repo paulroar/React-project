@@ -68,6 +68,22 @@
   .listing-card a:hover {
     background-color: #005f5f;
   }
+
+  button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005f5f;
+  }
   
   .delete-button {
     margin-top: 1em;
